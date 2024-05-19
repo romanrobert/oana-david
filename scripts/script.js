@@ -26,7 +26,7 @@ const staggerItemsOut = function (arr) {
 const handleNavigationMenu = function () {
   navButton.addEventListener("click", () => {
     if (nav.style.transform != "translate(0%)") {
-      navButtonImage.src = "../assets/close.svg";
+      navButtonImage.src = "./assets/close.svg";
       nav.style.transform = "translate(0%)";
 
       setTimeout(() => {
