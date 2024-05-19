@@ -1,0 +1,60 @@
+@use "../abstracts/variables";
+@use "../abstracts/fonts";
+
+.main-header {
+  padding: 1.5rem 0rem;
+  border-top: 3px solid variables.$black-200;
+  border-bottom: 3px solid variables.$black-200;
+  background-color: variables.$white-200;
+  position: relative;
+}
+
+.main-header-container,
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  font-family: "ClashDisplay-Medium", sans-serif;
+  font-size: 1.25rem;
+  gap: 1.5rem;
+}
+
+.nav-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+@media (width <= 950px) {
+  .nav-button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: calc(6rem - 4px);
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: calc(100dvh - 6rem);
+    flex-direction: column;
+    justify-content: center;
+    background-color: variables.$white-200;
+    font-size: 2.25rem;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: transform 300ms variables.$easing;
+  }
+
+  .nav-item {
+    transform: translateX(2rem);
+    opacity: 0;
+    transition: transform 300ms variables.$easing,
+      opacity 300ms variables.$easing;
+  }
+}
