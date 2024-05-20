@@ -4,6 +4,7 @@ const navButton = document.querySelector(".nav-button");
 const nav = document.querySelector(".nav-list");
 const navItems = document.querySelectorAll(".nav-item");
 const navButtonImage = navButton.querySelector("img");
+const body = document.querySelector("body");
 
 const staggerItemsIn = function (arr) {
   arr.forEach((item, index) => {

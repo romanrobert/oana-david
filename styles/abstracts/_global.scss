@@ -2,6 +2,7 @@
 @use "../abstracts/variables";
 
 html {
+  // overflow-x: hidden;
 }
 
 body {
@@ -9,10 +10,6 @@ body {
   font-size: 1.25rem;
   overflow-x: hidden;
 }
-
-// main {
-//
-// }
 
 h1,
 h2 {
@@ -24,8 +21,17 @@ h4 {
   font-family: "ClashDisplay-Medium", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
+}
+
 h1 {
   font-size: clamp(3rem, 4vw + 1rem, 4rem);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
 }
 
 h2 {
@@ -44,6 +50,16 @@ h4 {
 a {
   text-decoration: none;
   color: variables.$black-200;
+}
+
+.body-l-medium {
+  font-family: "ClashDisplay-Medium", sans-serif;
+  font-size: 1.5rem;
+}
+
+.body-l {
+  font-family: "ClashDisplay-Regular", sans-serif;
+  font-size: 1.5rem;
 }
 
 .container {

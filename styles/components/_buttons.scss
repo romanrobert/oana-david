@@ -1,0 +1,17 @@
+@use "../abstracts/variables";
+@use "../abstracts/fonts";
+@use "../abstracts/global";
+
+.primary-button,
+.secondary-button {
+  padding: 1.625rem 3.125rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 3px solid variables.$black-100;
+  border-radius: 100vw;
+  font-family: "ClashDisplay-Medium", sans-serif;
+  font-size: 1.5rem;
+  background-color: transparent;
+  cursor: pointer;
+}

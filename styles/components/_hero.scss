@@ -1,0 +1,83 @@
+@use "../abstracts/variables";
+@use "../abstracts/fonts";
+@use "../abstracts/global";
+
+.hero-section {
+  background-color: variables.$purple;
+  padding: 2.5rem 0rem;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  background-color: variables.$white-200;
+  padding: 4.5rem 4.375rem;
+  border-radius: 5rem;
+}
+
+.hero-content-info {
+  .body-l {
+    max-width: 30ch;
+  }
+
+  .primary-button {
+    margin-top: 3.375rem;
+  }
+}
+
+.hero-section-image {
+  padding-right: 2.5rem;
+  position: relative;
+  min-width: 25vw;
+
+  .img-oana {
+    border: 25px solid #c5a1ff;
+    border-radius: 100vw 100vw 0vw 0vw;
+    position: relative;
+    z-index: 1;
+  }
+
+  .star {
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+    transition: all 5s variables.$easing;
+  }
+
+  .arrow {
+    position: absolute;
+    right: 0;
+    top: -3rem;
+  }
+
+  &:hover .star {
+    rotate: 360deg;
+  }
+}
+
+@media (width <= 950px) {
+  .hero-content {
+    flex-wrap: wrap-reverse;
+    padding: 3.75rem 1.5rem;
+  }
+
+  .hero-section-image {
+    max-width: 16rem;
+    margin-bottom: 2rem;
+    .img-oana {
+      border-width: 0.75rem;
+    }
+
+    .star {
+      max-width: 4rem;
+      left: 0;
+      top: -1rem;
+    }
+
+    .arrow {
+      max-width: 7.5rem;
+      right: 1rem;
+      top: -1rem;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 @use "../abstracts/variables";
 @use "../abstracts/fonts";
+@use "../abstracts/global";
 
 .main-header {
   padding: 1.5rem 0rem;
@@ -49,6 +50,7 @@
     gap: 2rem;
     transform: translateX(100%);
     transition: transform 300ms variables.$easing;
+    z-index: 100;
   }
 
   .nav-item {
