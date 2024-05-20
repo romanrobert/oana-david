@@ -1,6 +1,10 @@
 @use "../abstracts/fonts";
 @use "../abstracts/variables";
 
+html {
+  // overflow-x: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
