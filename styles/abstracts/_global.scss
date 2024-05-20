@@ -2,7 +2,6 @@
 @use "../abstracts/variables";
 
 html {
-  overflow-x: hidden;
 }
 
 body {
@@ -10,6 +9,10 @@ body {
   font-size: 1.25rem;
   overflow-x: hidden;
 }
+
+// main {
+//
+// }
 
 h1,
 h2 {
